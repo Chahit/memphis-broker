@@ -5,7 +5,7 @@ COPY . .
 
 RUN CGO_ENABLED=0 go build -ldflags="-w" -a -o  .
 
-FROM alpine:3.15
+FROM alpine:3.16
 ENV GOPATH="/go/src"
 WORKDIR /run
 
